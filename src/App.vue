@@ -139,7 +139,6 @@ export default {
             axios
                 .get(`${this.url}search/${this.restaurantName}+${this.city}`)
                 .then(response => {
-                    console.log("success", response);
                     this.restaurants = response.data.results;
                     this.restaurants.map(restaurant => {
                         restaurant.peopleRequestCount = this.randomPeopleCount();
@@ -149,7 +148,6 @@ export default {
                     console.log("error", err);
                 })
                 .finally(res => {
-                    console.log("finally", res);
                     this.loading = !this.loading;
                 });
         }

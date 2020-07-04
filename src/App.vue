@@ -82,13 +82,11 @@
 
 <script>
 import axios from "axios";
-import dotenv from 'dotenv';
 
 export default {
     name: "App",
     data() {
         return {
-            env: dotenv.config(),
             city: "Los Angeles",
             restaurantName: "Jack's Chicken",
             loading: false,
@@ -112,8 +110,6 @@ export default {
     },
     mounted() {
         // this.$ons.notification.alert('Welcome to Cosmo Demo App!')
-        console.log(process.env);
-        console.log(dotenv.config())
         this.maps_api = process.env.VUE_APP_MAPS_KEY;
     },
     computed: {

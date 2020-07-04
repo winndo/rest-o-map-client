@@ -9,7 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "onsenui": "^2.10.10",
+    "sass": "^1.26.9",
+    "sass-loader": "^9.0.1",
+    "vue": "^2.6.11",
+    "vue-onsenui": "^2.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -38,5 +42,8 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "prettier": {
+    "tabWidth": 4
+  }
 }

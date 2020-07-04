@@ -147,7 +147,7 @@ export default {
                 .catch(err => {
                     console.log("error", err);
                 })
-                .finally(res => {
+                .finally(() => {
                     this.loading = !this.loading;
                 });
         }
